@@ -1,0 +1,22 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+
+
+	    int n=nums.size()// this takes the size of the num array
+	    
+	    // the first loop scans from start till the end of the array
+        for(int i =0; i <n ; i++){
+            int e= nums [i];this gives nums the value
+            for ( int j = i+1 ; j<n; j++){
+            	//this is the cheaking condition if the num[i] is equal to num [j]
+                if (e==nums [j])
+				 return true;
+              }
+            }
+      return false ;
+    }
+    };
+    // this program have a complexity of o(n^2) as we have 2 for loops for the small n this algroithm is perfect
+    // as the value of n increases the problem becomes seriously complex
+    // so we will come up with a better solution for this
