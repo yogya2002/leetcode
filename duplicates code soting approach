@@ -1,0 +1,19 @@
+// in an array wap to indentify two identical element and return ture if there are two identical element and false if there is no similar elements 
+// approch is simple 
+// step 1 create an array and take inputs 
+// step 2 sort the array by any sorting methods 
+// step 3 if two adjecent elements are same in a sorted array then return true else return false 
+
+
+
+class Solution {
+public:
+      int n=nums.size();// size of the array 
+ sort(nums.begin(),nums.end());// standred template library to sort the array 
+    for(int i = 0; i < n-1; i++)// loop form the n-1th element 
+    {
+      if (nums[i]==num [i+1]) // if two consecutive no is same then 
+        return true ;// return true 
+    }
+  return false ;// else return false 
+    };
